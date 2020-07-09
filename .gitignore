@@ -16,3 +16,4 @@
 
 # Enviroment variables
 .env
+.air.conf

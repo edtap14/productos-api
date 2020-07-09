@@ -1,6 +1,8 @@
 package models
 
-import "time"
+import (
+	"time"
+)
 
 /*Usuario es el modelo de usuario de la base de datos*/
 type Usuario struct {
