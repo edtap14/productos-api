@@ -9,7 +9,7 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-/*Login es la ruta para el registro de usuarios*/
+// Login es la ruta para el registro de usuarios
 func Login(c echo.Context) (err error) {
 	u := new(models.Usuario)
 	if err = c.Bind(u); err != nil {

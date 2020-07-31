@@ -1,9 +1,14 @@
 package models
 
-import "time"
+import (
+	"time"
 
-/*ProductSearchResponse estructura de respuesta*/
+	"github.com/jinzhu/gorm"
+)
+
+// ProductSearchResponse estructura de respuesta
 type ProductSearchResponse struct {
+	gorm.Model
 	RequestInfo struct {
 		Success          bool `json:"success"`
 		CreditsUsed      int  `json:"credits_used"`
